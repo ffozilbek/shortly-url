@@ -49,6 +49,8 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -107,8 +109,6 @@ img {
 .header__nav {
     margin-right: auto;
 }
-.sitenav {
-}
 .sitenav__list {
     display: flex;
     list-style: none;
@@ -141,6 +141,7 @@ img {
     color: var(--font-color-dark);
 }
 .button {
+    display: inline-block;
     text-decoration: none;
     background-color: var(--accent-color);
     font-size: 20px;
@@ -166,4 +167,34 @@ img {
     padding: 10px 31px 7px;
     font-size: 15px;
     border-radius: 10px;
+}
+
+/* MAIN */
+
+/* HERO */
+.hero {
+    padding-top: 92px;
+    padding-bottom: 222px;
+    background-image: url("../img/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top 30px left calc(50% + 476px) ;
+}
+.hero__inner {
+    width: 570px;
+}
+.hero__heading {
+    color: var(--font-color-dark);
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+}
+.hero__text {
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+.button {
 }
