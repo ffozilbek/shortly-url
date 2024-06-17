@@ -412,3 +412,22 @@ select:-webkit-autofill:focus {
     left: 100%;
     top: 112px;
 }
+
+/* CTA section */
+
+.cta-section {
+    width: 100%;
+    background-image: url("../img/cta-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 57px;
+    text-align: center;
+}
+.cta-section__text {
+    font-size: 40px;
+    color: var(--body-bg);
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
