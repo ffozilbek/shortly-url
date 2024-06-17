@@ -13,9 +13,10 @@ const elShorterLinks = document.querySelector(".url-shortener__shorter-links"),
         elNewShortLinkCopierBtn.addEventListener("click", ()=> {
             elNewShortLinkCopierBtn.textContent="Copied!";
             elNewShortLinkCopierBtn.classList.add("button--clicked");
+            navigator.clipboard.writeText(elNewShortLinkCopierBtn.previousElementSibling.textContent);
             setTimeout(() => {
                 elNewShortLinkCopierBtn.textContent="Copy";
-            elNewShortLinkCopierBtn.classList.remove("button--clicked");
-            }, 3000);
+                elNewShortLinkCopierBtn.classList.remove("button--clicked");
+            }, 400);
         })
     });
