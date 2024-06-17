@@ -348,6 +348,7 @@ select:-webkit-autofill:focus {
 
 .statistiks__features {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -392,4 +393,22 @@ select:-webkit-autofill:focus {
 }
 .card--bottom {
     top: 88px;
+}
+.card--medium::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: var(--accent-color);
+    right: 100%;
+    top: 112px;
+}
+.card--medium::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    background-color: var(--accent-color);
+    left: 100%;
+    top: 112px;
 }
